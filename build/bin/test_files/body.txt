@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Delete>
+    <Quiet>false</Quiet>
+    <Object>
+        <Key>foo.txt</Key>
+    </Object>
+    <Object>
+        <Key>bar.txt</Key>
+    </Object>
+</Delete>

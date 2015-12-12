@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+add_subdirectory(oss_sdk_cpp)
+add_subdirectory(samples)
+add_subdirectory(third_party/googletest)
+add_subdirectory(unittests)

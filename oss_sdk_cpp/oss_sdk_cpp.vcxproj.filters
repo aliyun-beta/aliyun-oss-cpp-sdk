@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{67dff9a1-aa97-4aba-a50a-cfbae366c02e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{5e443f67-f35b-4089-9348-fbe20acd373b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message">
+      <UniqueIdentifier>{ef518652-fb02-484b-8b02-6764daef72fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{01c16725-92f7-403d-adc4-254b7e1f83b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oss">
+      <UniqueIdentifier>{afdd6b14-7621-469d-b1c5-6a7225feddce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmake">
+      <UniqueIdentifier>{a3bdb165-9ae2-48ad-a30e-c992cee134fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\nullable.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\string_piece.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sys_string_conversions.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\apr_utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\http_utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\sign_utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\string_utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="message\append_object_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\bucket_cors.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\complete_multipart_upload_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\complete_multipart_upload_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\copy_object_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\copy_object_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\delete_multiple_objects_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\delete_multiple_objects_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\get_bucket_acl_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\get_bucket_cors_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\get_bucket_lifecycle_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\get_bucket_location_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\get_bucket_logging_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\get_bucket_referer_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\get_bucket_website_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\get_object_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\initiate_multipart_upload_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\initiate_multipart_upload_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\lifecycle_rule.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\list_buckets_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\list_buckets_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\list_multipart_uploads_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\list_multipart_uploads_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\list_objects_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\list_objects_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\list_parts_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\list_parts_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\multipart_upload.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\object_content.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\option_object_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\option_object_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\part_etag.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\set_bucket_cors_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\set_bucket_lifecycle_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\set_bucket_logging_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\set_bucket_referer_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\set_bucket_website_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\upload_part.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\upload_part_copy_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\upload_part_copy_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\upload_part_request.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\upload_part_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="http\curl_warppers.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\http_engine.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\http_engine_input.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\http_engine_output.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="message\object_metadata.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="message\bucket.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="base\base.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="http\http_headers.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="oss\oss.h">
+      <Filter>oss</Filter>
+    </ClInclude>
+    <ClInclude Include="oss\oss_client.h">
+      <Filter>oss</Filter>
+    </ClInclude>
+    <ClInclude Include="oss\oss_error_code.h">
+      <Filter>oss</Filter>
+    </ClInclude>
+    <ClInclude Include="oss\oss_exception.h">
+      <Filter>oss</Filter>
+    </ClInclude>
+    <ClInclude Include="oss\oss_client_configuration.h">
+      <Filter>oss</Filter>
+    </ClInclude>
+    <ClInclude Include="oss\oss_status.h">
+      <Filter>oss</Filter>
+    </ClInclude>
+    <ClInclude Include="base\macros.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="http\http_configuration.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="message\append_object_result.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="base\defer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\xml_utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="base\range.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\string_piece.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\sys_string_conversions_win.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\apr_utils.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\http_utils.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\sign_utils.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\string_utils.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utils.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="message\append_object_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\complete_multipart_upload_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\complete_multipart_upload_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\copy_object_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\copy_object_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\delete_multiple_objects_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\delete_multiple_objects_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_acl_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_cors_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_lifecycle_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_location_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_logging_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_referer_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_website_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_object_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\initiate_multipart_upload_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\initiate_multipart_upload_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_buckets_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_buckets_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_multipart_uploads_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_multipart_uploads_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_objects_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_objects_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_parts_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_parts_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\option_object_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_cors_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_lifecycle_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_logging_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_referer_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_website_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_copy_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_copy_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="http\curl_warppers.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_engine.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_engine_input.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_engine_output.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="message\object_metadata.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="base\base.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_headers.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\oss.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\oss_client.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\oss_error_code.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\oss_exception.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\oss_client_configuration.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\oss_status.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+    <ClCompile Include="message\append_object_result.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_configuration.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="message\bucket.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\part_etag.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\multipart_upload.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\object_content.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\bucket_cors.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\option_object_request.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\lifecycle_rule.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\xml_utils.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt">
+      <Filter>cmake</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cmake\FindAPR.cmake">
+      <Filter>cmake</Filter>
+    </None>
+  </ItemGroup>
+</Project>

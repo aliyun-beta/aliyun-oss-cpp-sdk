@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A496031F-B148-4B35-A14B-46F4D6085884}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>unittests</RootNamespace>
+    <ProjectName>unittests</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\build\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\third_party\apr\include\apr;..\third_party\apr\include\aprutil;..\third_party\;..\third_party\curl\include;..\third_party\tinyxml;..\;..\third_party\googletest\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../build/lib;../third_party/apr/lib;../third_party/tinyxml/Debug;../third_party/curl/lib;..\third_party\googletest\msvc\gtest\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>../build/lib/oss_sdk_cppd.lib;gtestd.lib;tinyxml.lib;apr-1.lib;aprutil-1.lib;libcurld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base\nullable_unittest.cc" />
+    <ClCompile Include="base\string_piece_unittest.cc" />
+    <ClCompile Include="http\curl_warppers_unittest.cc" />
+    <ClCompile Include="http\http_configuration_unittest.cc" />
+    <ClCompile Include="http\http_engine_input_unittest.cc" />
+    <ClCompile Include="http\http_engine_output_unittest.cc" />
+    <ClCompile Include="http\http_engine_unittest.cc" />
+    <ClCompile Include="message\append_object_request_unittest.cc" />
+    <ClCompile Include="message\append_object_result_unittest.cc" />
+    <ClCompile Include="message\bucket_cors_unittest.cc" />
+    <ClCompile Include="message\bucket_unittest.cc" />
+    <ClCompile Include="message\complete_multipart_upload_request_unittest.cc" />
+    <ClCompile Include="message\complete_multipart_upload_result_unittest.cc" />
+    <ClCompile Include="message\copy_object_request_unittest.cc" />
+    <ClCompile Include="message\copy_object_result_unittest.cc" />
+    <ClCompile Include="message\delete_multiple_objects_request_unittest.cc" />
+    <ClCompile Include="message\delete_multiple_objects_result_unittest.cc" />
+    <ClCompile Include="message\get_bucket_acl_result_unittest.cc" />
+    <ClCompile Include="message\get_bucket_cors_result_unittest.cc" />
+    <ClCompile Include="message\get_bucket_lifecycle_result_unittest.cc" />
+    <ClCompile Include="message\get_bucket_location_result_unittest.cc" />
+    <ClCompile Include="message\get_bucket_logging_result_unittest.cc" />
+    <ClCompile Include="message\get_bucket_referer_result_unittest.cc" />
+    <ClCompile Include="message\get_bucket_website_result_unittest.cc" />
+    <ClCompile Include="message\get_object_request_unittest.cc" />
+    <ClCompile Include="message\initiate_multipart_upload_request_unittest.cc" />
+    <ClCompile Include="message\initiate_multipart_upload_result_unittest.cc" />
+    <ClCompile Include="message\lifecycle_rule_unittest.cc" />
+    <ClCompile Include="message\list_buckets_request_unittest.cc" />
+    <ClCompile Include="message\list_buckets_result_unittest.cc" />
+    <ClCompile Include="message\list_multipart_uploads_request_unittest.cc" />
+    <ClCompile Include="message\list_multipart_uploads_result_unittest.cc" />
+    <ClCompile Include="message\list_objects_request_unittest.cc" />
+    <ClCompile Include="message\list_objects_result_unittest.cc" />
+    <ClCompile Include="message\list_parts_request_unittest.cc" />
+    <ClCompile Include="message\list_parts_result_unittest.cc" />
+    <ClCompile Include="message\multipart_upload_unitetest.cc" />
+    <ClCompile Include="message\object_content_unittest.cc" />
+    <ClCompile Include="message\object_metadata_unittest.cc" />
+    <ClCompile Include="message\option_object_request_unittest.cc" />
+    <ClCompile Include="message\option_object_result_unittest.cc" />
+    <ClCompile Include="message\part_etag_unittest.cc" />
+    <ClCompile Include="message\set_bucket_cors_request_unittest.cc" />
+    <ClCompile Include="message\set_bucket_lifecycle_request_unittest.cc" />
+    <ClCompile Include="message\set_bucket_logging_request_unittest.cc" />
+    <ClCompile Include="message\set_bucket_referer_request_unittest.cc" />
+    <ClCompile Include="message\set_bucket_website_request_unittest.cc" />
+    <ClCompile Include="message\upload_part_copy_reques_unittest.cc" />
+    <ClCompile Include="message\upload_part_copy_result_unittest.cc" />
+    <ClCompile Include="message\upload_part_request_unittest.cc" />
+    <ClCompile Include="message\upload_part_result_unittest.cc" />
+    <ClCompile Include="message\upload_part_unittest.cc" />
+    <ClCompile Include="oss\oss_client_unittest.cc" />
+    <ClCompile Include="oss\oss_exception_unittest.cc" />
+    <ClCompile Include="oss\status_unittest.cc" />
+    <ClCompile Include="unittests.cpp" />
+    <ClCompile Include="utils\apr_utils_unittest.cc" />
+    <ClCompile Include="utils\http_utils_unittest.cc" />
+    <ClCompile Include="utils\sign_utils_unittest.cc" />
+    <ClCompile Include="utils\string_utils_unittest.cc" />
+    <ClCompile Include="utils\utils_unittest.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

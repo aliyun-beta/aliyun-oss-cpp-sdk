@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="message">
+      <UniqueIdentifier>{071dde11-2707-4e54-8d50-3d380753d242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{0b1117d7-cfe1-4414-a420-346a73dd09c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{900fe8d5-cdea-4f82-a48e-569bc812af8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{5b05cdf1-06b5-4d06-b874-7ee22da822e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="result">
+      <UniqueIdentifier>{32267eaf-489d-4c0d-913c-5bc6a0226ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oss">
+      <UniqueIdentifier>{35cfb415-7d1e-43f0-8021-f2b5525be845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmake">
+      <UniqueIdentifier>{1d1033fc-f3fa-4fbc-988f-97e6f93d9022}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="message\append_object_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message\bucket_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\complete_multipart_upload_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\bucket_cors_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\copy_object_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\delete_multiple_objects_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_object_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\initiate_multipart_upload_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\lifecycle_rule_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_buckets_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_multipart_uploads_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_objects_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\multipart_upload_unitetest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\object_content_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\object_metadata_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\option_object_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\part_etag_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_cors_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_lifecycle_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_logging_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_referer_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\set_bucket_website_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_copy_reques_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_parts_request_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\apr_utils_unittest.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\http_utils_unittest.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\sign_utils_unittest.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\string_utils_unittest.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utils_unittest.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="base\nullable_unittest.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\string_piece_unittest.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="http\curl_warppers_unittest.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_configuration_unittest.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_engine_unittest.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_engine_input_unittest.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_engine_output_unittest.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="message\append_object_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\complete_multipart_upload_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\copy_object_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\delete_multiple_objects_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_acl_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_cors_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_lifecycle_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_location_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_logging_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_referer_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\get_bucket_website_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\initiate_multipart_upload_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_buckets_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_multipart_uploads_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_objects_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\list_parts_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\option_object_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_copy_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="message\upload_part_result_unittest.cc">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\oss_client_unittest.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\status_unittest.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+    <ClCompile Include="oss\oss_exception_unittest.cc">
+      <Filter>oss</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt">
+      <Filter>cmake</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

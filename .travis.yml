@@ -1,0 +1,14 @@
+language: cpp
+
+compiler:
+  - gcc
+
+before_script:
+  - sudo pip install cpp-coveralls
+  - sudo apt-get install libapr1-dev libaprutil1-dev  libtinyxml-dev libtinyxml-dev libcurl4-openssl-dev
+  - cmake .
+  - make
+  - build/bin/unittests
+
+script: 
+  - coveralls --root oss_sdk
