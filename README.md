@@ -1,7 +1,7 @@
 # OSS C++ SDK
 
 # License
-xxx
+Apache License 2.0
     
 # System requirements
   + Ubuntu 12.04 tested, gcc 4.6
