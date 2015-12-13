@@ -6,7 +6,7 @@
 First step, you need to create an OSSClient instance.
 
 ```c++
-  #include "oss_sdk/oss/oss_client.h"
+  #include "oss_sdk_cpp/oss/oss_client.h"
   using namespace oss;
 
   std::string endpoint = "oss-cn-hangzhou.aliyuncs.com";
