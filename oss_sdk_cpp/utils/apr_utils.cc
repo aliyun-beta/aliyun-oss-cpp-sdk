@@ -66,7 +66,7 @@ void AprHmacSha1(const char *key, int key_length,
   apr_sha1_ctx_t context;
   uint8_t hashed_key[kDigestSize];
 
-  //  shorten long key.
+  // shorten long key.
   if (key_length > kBlockSize) {
     apr_sha1_init(&context);
     apr_sha1_update(&context, key, key_length);
@@ -84,14 +84,14 @@ void AprHmacSha1(const char *key, int key_length,
     key_opad[i] = key[i] ^ kOpad;
   }
 
-  //  calculate inner SHA1
+  // calculate inner SHA1
   uint8_t sha[kDigestSize];
   apr_sha1_init(&context);
   apr_sha1_update(&context, key_ipad, kBlockSize);
   apr_sha1_update(&context, data, data_length);
   apr_sha1_final(sha, &context);
 
-  //  calculate outer HMAC
+  // calculate outer HMAC
   apr_sha1_init(&context);
   apr_sha1_update(&context, key_opad, kBlockSize);
   apr_sha1_update(&context, reinterpret_cast<const char*>(sha), kDigestSize);
