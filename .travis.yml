@@ -4,6 +4,7 @@ compiler:
   - gcc
 
 before_script:
+  - sudo apt-get update
   - sudo pip install cpp-coveralls
   - sudo apt-get install libapr1-dev libaprutil1-dev  libtinyxml-dev libtinyxml-dev libcurl4-openssl-dev
   - cmake .
