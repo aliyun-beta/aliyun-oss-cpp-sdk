@@ -12,4 +12,4 @@ before_script:
   - build/bin/unittests
 
 script: 
-  - coveralls --root oss_sdk
+  - coveralls --root oss_sdk_cpp
