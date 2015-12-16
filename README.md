@@ -1,5 +1,6 @@
 # OSS C++ SDK
-
+[![Build Status](https://travis-ci.org/aliyun-beta/aliyun-oss-cpp-sdk.svg?branch=master)](https://travis-ci.org/aliyun-beta/aliyun-oss-cpp-sdk)
+[![Coverage Status](https://coveralls.io/repos/aliyun-beta/aliyun-oss-cpp-sdk/badge.svg?branch=master&service=github)](https://coveralls.io/github/aliyun-beta/aliyun-oss-cpp-sdk?branch=master)
 # License
 Apache License 2.0
     
