@@ -94,7 +94,7 @@ class OssClient {
 
   Status ListBuckets(std::vector<Bucket>* buckets);
 
-  // permission can be public read-write, public-read or private.
+  // permission can be public-read-write, public-read or private.
   Status CreateBucket(const std::string& bucket_name,
                       const std::string& acl = kAclPrivate);
 
