@@ -1,0 +1,11 @@
+version: 1.0
+
+branches:
+# whitelist
+    only:
+        - appveyor
+
+install:
+
+build:
+    project: all.sln
