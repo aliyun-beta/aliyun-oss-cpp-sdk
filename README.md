@@ -7,7 +7,7 @@ Apache License 2.0
 # System requirements
   + Ubuntu 12.04 tested, gcc 4.6
   + Windows 7+, Visual Studio 2013 update4+
-  + Mac OSX 10.10, LLVM 7.0.0 tested.
+  + Mac OSX 10.10, Clang 3.7 tested.
 
 # How to build
   + Windows
